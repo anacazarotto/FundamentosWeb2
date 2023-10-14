@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="./cat.png" />
+    <title>THE CATS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>The Cats</h1>
+        <h2>Uma A.P.I. aberta, gratuita, de leitura e gravação sobre gatos</h2>
+    </header>
+
+    <nav></nav>
+    <div style="background-color: #F2EFF1;">
+        <b>&nbsp;Selecione a Espécie:&nbsp;</b>
+        <select class="breed_select">
+            <option></option>
+        </select>
+
+        <div id="breed_data" style="background-color: #F2EFF1;">
+            <img id="breed_image" src="" style="border-radius: 50%" />
+            <table id="breed_data_table">
+            </table>
+        </div>
+
+        <div id="carousel_cats" style="display: none;" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="carousel_cats_inner" style="max-height: 800px">
+            </div>
+            <a class="carousel-control-prev" href="#carousel_cats" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_cats" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <h4>
+            Aluna: Ana Carla Londero Cazarotto<br>
+            Disciplina: Fundamentos do Desenvolvimento Web<br>
+            <a href="https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t">
+                Documentação da API
+            </a><br>
+            <div id="google_translate_element"></div>
+
+        </h4>
+    </footer>
+
+</body>
+
+<script type="text/javascript" src="custom.js"></script>
+
+<script type="text/javascript" src="translate.js"></script>
+
+</html>
